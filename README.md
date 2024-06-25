@@ -98,44 +98,38 @@ Responsibilities:
 
 ### Build the Project
 
+- mvn clean install
 
-## How to Build and Run
+## Running the Script in Unix/Linux
 
-### Build the Project
+### To run the single-process version:
 
+- chmod +x run.sh
 
-mvn clean install
+- ./run.sh
 
-Running the Script in Unix/Linux
+### To run the multi-process version:
 
-To run the single-process version:
+- chmod +x run.sh
 
-chmod +x run.sh
-
-./run.sh
-
-To run the multi-process version:
-
-chmod +x run.sh
-
-./run.sh multi
+- ./run.sh multi
 
 
-Running the Script in Windows
+## Running the Script in Windows
 
-To run the single-process version:
+### To run the single-process version:
 
-mvn exec:java -Dexec.mainClass="Player.Main"
+- mvn exec:java -Dexec.mainClass="Player.Main"
 
-To run the multi-process version:
+### To run the multi-process version:
 
-mvn exec:java -Dexec.mainClass="Player.Main" -Dexec.args="multi"
+- mvn exec:java -Dexec.mainClass="Player.Main" -Dexec.args="multi"
 
-Testing
+## Testing
 
-Unit tests are written using JUnit. To run the tests, execute:
+### Unit tests are written using JUnit. To run the tests, execute:
 
-mvn test
+- mvn test
 
 
 
